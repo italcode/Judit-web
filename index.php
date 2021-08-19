@@ -39,7 +39,7 @@
           <ul>
             <li class="accordion" id="fire">תנור</li>
             <li class="accordion" id="knewledge">ידע</li>
-            <li class="accordion" id="matter">חמור</li>
+            <li class="accordion" id="matter">חומר</li>
             <li class="accordion" id="place">סדנה</li>
           </ul>
 
