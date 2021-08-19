@@ -82,7 +82,9 @@ p{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-auto-rows: minmax(20vh,auto);
-
+    
+    
+    max-width:100vw;
     gap: 1rem;
     margin: 1.6rem;
 
