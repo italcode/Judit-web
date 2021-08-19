@@ -36,12 +36,12 @@
         <section class="pre-introduction">
           <h3>מקום אחד שמספק לך</h3>
 
-<!--           <ul>
+          <ul>
             <li class="accordion" id="fire">תנור</li>
             <li class="accordion" id="knewledge">ידע</li>
             <li class="accordion" id="matter">חמור</li>
             <li class="accordion" id="place">סדנה</li>
-          </ul> -->
+          </ul>
 
           <div id="placeX" class="panel">
             <p>
