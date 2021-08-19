@@ -243,6 +243,7 @@ main{
     grid-row: 1/4;
     overflow: auto;
     border: none;
+    padding-right: 0;
 }
 
 main > .text-description > h3{
@@ -306,9 +307,11 @@ footer > ul > li > a:hover{
     }
 
     .slide-gallery{
-
         align-items: start;
-
+    }
+    
+    .text-description{
+        padding-right: 1.6rem;
     }
 
 }
