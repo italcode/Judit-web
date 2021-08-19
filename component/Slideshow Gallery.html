@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .slide-gallery{
+            display: grid;
+
+            grid-template-rows: 2fr 1fr;
+
+            max-width: 800px;
+            height: 60vh;
+
+            row-gap: 10px;
+
+            margin: 0 auto;
+        }
+
+        .main-image{
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            /* border: 2px solid black; */
+        }
+
+        .slide-image{   
+            grid-row: 2/3;
+
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            column-gap: 3px;
+            border: 3px solid white;
+        }
+
+        .slide-image > div{   
+           border: 2px solid black;
+        }
+        .slide-image > div{   
+           border: 2px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+           filter: blur(1px);
+           -webkit-filter: blur(1px);
+        }
+
+        .slide-image > div:hover{              
+           filter: blur(0px);
+           -webkit-filter: blur(0px);
+           cursor: pointer;
+        }
+
+        .actual-img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body style="height: 100vh;">
+
+    <div class="slide-gallery">
+        
+            <div class="main-image"></div>
+
+            <div class="slide-image">
+                <div class="base image">
+                    <img 
+                        class="actual-img"
+                        src="../images/pexels-meruyert-gonullu-6243366.jpg" 
+                        alt=""
+                    >
+                </div>
+                <div class="image">
+                    <img 
+                        class="actual-img"
+                    src="../images/pexels-anthony-shkraba-4706134.jpg" 
+                    alt=""
+                >
+            </div>
+            <div class="image">
+                <img 
+                    class="actual-img"
+                    src="../images/pexels-meruyert-gonullu-6243344.jpg" 
+                    alt=""
+                >
+            </div>
+            <div class="image">
+                <img 
+                    class="actual-img"
+                    src="../images/pexels-vansh-sharma-3692083.jpg" 
+                    alt=""
+                >
+            </div>
+            <div class="image">
+                <img 
+                    class="actual-img"
+                    src="../images/pexels-andre-william-3010771.jpg" 
+                    alt=""
+                >
+            </div>
+            <div class="image">
+                <img 
+                    class="actual-img"
+                    src="../images/pexels-monstera-5302901.jpg" 
+                    alt=""
+                >
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const baseImage = document.querySelector('.base');
+        const mainImage = document.querySelector('.main-image');
+        const selectedImage = document.querySelectorAll('.image');
+
+
+        selectedImage.forEach( element => {
+            element.addEventListener('click', (e) =>{
+                mainImage.innerHTML = element.innerHTML;
+            })
+        });
+
+        mainImage.innerHTML = baseImage.innerHTML;
+
+    </script>
+    
+</body>
+</html>
