@@ -63,6 +63,11 @@ body{
     color: var(--page-font-color);
 }
 
+::selection{
+    background: white;
+    color:#0072B5;
+}
+
 p{
     line-height: 2.6rem;
     font-size: 1.6rem;
