@@ -165,8 +165,9 @@
         </main>
 
         <section class="map">
-          <h3>מפה</h3>
+          <iframe  src="https://embed.waze.com/iframe?zoom=16&lat=32.752262&lon=35.094212&ct=livemap" width="100%" height="100%" style="border: none; padding: 0; margin: 0;" allowfullscreen></iframe>
         </section>
+        
       </div>
 
       <footer>
