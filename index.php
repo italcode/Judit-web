@@ -12,7 +12,7 @@
     />
     <title>Imagination</title>
   </head>
-  <body>
+  <body style="backround-color: white;">
     <!-- side menu -->
     <div id="mySidenav" class="sidenav">
       <span class="closebtn" onclick="closeNav()"> &times; </span>
